@@ -3,9 +3,9 @@
 {% else %}
   {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
-
-<div class="d-flex flex-column flex-items-center  flex-justify-center position-md-relative top-md-0 left-md-0">
-    <img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
+<div style="background: darkslateblue;width: 100%;height: 121px;position: absolute;"></div>
+<div class="d-flex flex-column flex-items-center  flex-justify-center position-relative top-md-0 left-md-0">
+    <img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 175px; border: 5px solid darkslateblue;">
     <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
   {{ user.bio }}
